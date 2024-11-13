@@ -78,5 +78,5 @@ public abstract class ButtonBase {
      * Checks if the button is pressed.
      * @return true if the button is considered pressed
      */
-    protected abstract boolean pressed();
+    public abstract boolean pressed();
 }
