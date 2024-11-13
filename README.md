@@ -46,6 +46,8 @@ The lib2960 library is broken up by the required vendor libraries. The other ass
   - This is the core library and is required for any of the vendor specific version to work
 - lib2960 Cross the Road Electronics (CTRE) - [lib2960_ctre](https://github.com/Team-2960/lib2960_ctre)
   - Includes implementations of lib2960 classes that use the CTRE Phoenix vendor libraries
+- lib2960 Rev - [lib2960_rev](https://github.com/Team-2960/lib2960_rev)
+  - Includes implementations of lib2960 classes that use the RevLib vendor libraries
 - lib2960 PathPlanner - [lib2960_pathplanner](https://github.com/Team-2960/lib2960_pathplanner)
   - Includes helper methods to use Path Planner with lib2960
 - lib2960 Photon Vision - [lib2960_photonvision](https://github.com/Team-2960/lib2960_photonvision)
