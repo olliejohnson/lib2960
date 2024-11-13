@@ -124,6 +124,8 @@ public abstract class MotorMechanismBase extends SubsystemBase {
         public SetVoltageCommand(MotorMechanismBase mechanism, double target_voltage) {
             this.mechanism = mechanism;
             this.target_voltage = target_voltage;
+
+            addRequirements(mechanism);
         }
 
         /**
@@ -158,6 +160,8 @@ public abstract class MotorMechanismBase extends SubsystemBase {
         public SetRateCommand(MotorMechanismBase mechanism, double target_rate) {
             this.mechanism = mechanism;
             this.target_rate = target_rate;
+
+            addRequirements(mechanism);
         }
 
         /**
@@ -207,6 +211,8 @@ public abstract class MotorMechanismBase extends SubsystemBase {
             this.target = target;
             this.tol = mechanism.settings.def_tol;
             this.auto_complete = true;
+
+            addRequirements(mechanism);
         }
 
         /**

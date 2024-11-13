@@ -105,6 +105,8 @@ public abstract class SwerveDriveBase extends SubsystemBase implements Drivetrai
         public AngleTrackCommand(SwerveDriveBase dt, Rotation2d target) {
             this.dt = dt;
             this.target = target;
+            
+            addRequirements(dt);
         } 
 
 
@@ -145,7 +147,11 @@ public abstract class SwerveDriveBase extends SubsystemBase implements Drivetrai
          * @param   target              Target point to track
          */
         public PointTrackCommand(SwerveDriveBase dt, Translation2d target) {
-            PointTrackCommand(dt, target, new Rotation2d());
+            this.dt = dt;
+            this.target = target;
+            this.offset = new Rotation2d();
+            
+            addRequirements(dt);
         } 
         
         /**
@@ -159,6 +165,8 @@ public abstract class SwerveDriveBase extends SubsystemBase implements Drivetrai
             this.dt = dt;
             this.target = target;
             this.offset = offset;
+
+            addRequirements(dt);
         } 
 
 
@@ -213,6 +221,8 @@ public abstract class SwerveDriveBase extends SubsystemBase implements Drivetrai
          */
         public CrossWheelsCommand(SwerveDriveBase dt) {
             this.dt = dt;
+            
+            addRequirements(dt);
         }
 
         /**
