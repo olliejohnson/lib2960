@@ -43,12 +43,8 @@ public class JoystickAxisToButton extends ButtonBase {
 
         public final int value;
 
-        public Direction(int value) {
+        private Direction(int value) {
             this.value = value;
-        }
-
-        public int getValue() {
-            return value;
         }
     }
 

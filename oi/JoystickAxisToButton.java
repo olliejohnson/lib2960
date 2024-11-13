@@ -45,7 +45,7 @@ public class JoystickAxisToButton extends ButtonBase {
     public JoystickAxisToButton(Joystick joystick, int axis, Limits pressed_range, boolean invert) {
         this.joystick = joystick;
         this.axis = axis;
-        this.pressed_range = pressed_range
+        this.pressed_range = pressed_range;
     }
 
     /**
