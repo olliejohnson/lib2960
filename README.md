@@ -24,7 +24,7 @@ Use the following steps to include this library:
         ```
         git init
         git add --all
-        git commit "Initializing project repository"
+        git commit -m "Initializing project repository"
         ```
 
 4. Add this library as a submodule using the following commands in the terminal
